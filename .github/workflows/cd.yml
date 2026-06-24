@@ -4,15 +4,17 @@ on:
   workflow_dispatch:
     inputs:
       image_ref:
-        description: 'jpanao19/go-fibonacci-api:2047249'
+        description: 'Docker image (e.g. username/go-math-api:abc123)'
         required: true
+        default: 'jpanao19/go-fibonacci-api:2047249'
       ec2_host:
-        description: '3.121.231.62'
+        description: 'EC2 public IP or DNS'
         required: true
+        default: '3.121.231.62'
       ssh_username:
-        description: 'student'
+        description: 'EC2 SSH username (e.g. student01)'
         required: true
-        default: 'student'
+        default: 'student01'
 
 jobs:
   deploy:
