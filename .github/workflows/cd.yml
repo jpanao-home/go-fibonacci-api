@@ -10,11 +10,11 @@ on:
       ec2_host:
         description: 'EC2 public IP or DNS'
         required: true
-        default: '3.121.231.62'
+        default: '63.179.97.131'
       ssh_username:
         description: 'EC2 SSH username (e.g. student01)'
         required: true
-        default: 'student01'
+        default: 'student'
 
 jobs:
   deploy:
